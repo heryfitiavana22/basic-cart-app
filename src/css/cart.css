@@ -1,0 +1,129 @@
+.cart-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100vh;
+    padding: 48px 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+    z-index: 5555;
+    transform: scale(0);
+}
+
+.carts {
+    background-color: white;
+    padding: 22px 32px;
+}
+
+.list-cart {
+    display: grid;
+    gap: 18px;
+}
+
+.cart {
+    display: flex;
+    align-items: center;
+}
+
+.img-cart {
+    width: 184px;
+    height: 184px;
+    border: 1px solid rgb(239, 239, 239);
+}
+
+.cart-item {
+    margin-left: 18px;
+    width: 100%;
+}
+
+.cart .descri {
+    margin-bottom: 18px;    
+}
+
+.cart-price {
+    color: rgb(133, 133, 133);
+}
+
+.price-total > * {
+    display: inline-block;
+}
+
+.price-total {
+    position: relative;
+}
+
+.icon-delete {
+    float: right;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+.icon-delete:hover svg {
+    fill: #555555;
+}
+
+.total-cart {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.total-cart .total {font-weight: bold;}
+
+.btn-container {
+    display: flex;
+    justify-content: end;
+}
+
+.cart-container button {
+    color: white;
+    background-color: var(--color-primary);
+    border: 1px solid transparent;
+    padding: 6px 12px;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.cart-container button:hover {
+    color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+    background-color: white;
+}
+
+.cart-container .icon-close {
+    position: absolute;
+    top: 22px;
+    right: 22px;
+    width: 38px;
+    height: 38px;
+    cursor: pointer;
+}
+
+.cart-container .icon-close:hover path {
+    stroke: #f1a269;
+}
+
+@media screen and (max-width: 768px) {
+    .img-cart {
+        width: 148px;
+        height: 148px;
+    }
+
+    .cart-container .icon-close {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .img-cart {
+        width: 118px;
+        height: 118px;
+    }
+}

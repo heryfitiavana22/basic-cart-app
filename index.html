@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="icon" href="images/logo.png">
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/header.css">
+    <link rel="stylesheet" href="src/css/main.css">
+    <link rel="stylesheet" href="src/css/filter.css">
+    <link rel="stylesheet" href="src/css/products.css">
+    <link rel="stylesheet" href="src/css/cart.css">
+</head>
+<body>
+    <div id="root">
+        <div class="cart-container">
+            <div class="carts">
+                <h2>Carts</h2>
+                <ul class="list-cart">
+
+                </ul>
+                <div class="total-cart">
+                    <h3>Total :</h3>
+                    <span class="total">$0</span>
+                </div>
+                <div class="btn-container">
+                    <button>Command</button>
+                </div>
+            </div>
+            <div class="icon-close">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="Menu / Close_MD"><path id="Vector" d="M18 18L12 12M12 12L6 6M12 12L18 6M12 12L6 18" stroke="#fb6a00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></g></svg>
+            </div>
+        </div>
+
+        <div class="header-main">
+            <header>
+                <div class="logo">
+                    <img src="images/logo.png">
+                    <h1>Shop</h1>
+                </div>
+                <div class="form-search">
+                    <input type="text" class="input-search" placeholder="search products...">
+                    <div class="search">
+                        <span class="icon">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="Interface / Search_Magnifying_Glass"><path id="Vector" d="M15 15L21 21M10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10C17 13.866 13.866 17 10 17Z" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></g></svg>
+                        </span>
+                        <span class="text">search</span>
+                    </div>
+                </div>
+                <div class="items">
+                    <span class="icon icon-cart">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.78571 5H18.2251C19.5903 5 20.5542 6.33739 20.1225 7.63246L18.4558 12.6325C18.1836 13.4491 17.4193 14 16.5585 14H6.07142M4.78571 5L4.74531 4.71716C4.60455 3.73186 3.76071 3 2.76541 3H2M4.78571 5L6.07142 14M6.07142 14L6.25469 15.2828C6.39545 16.2681 7.23929 17 8.23459 17H17M17 17C15.8954 17 15 17.8954 15 19C15 20.1046 15.8954 21 17 21C18.1046 21 19 20.1046 19 19C19 17.8954 18.1046 17 17 17ZM11 19C11 20.1046 10.1046 21 9 21C7.89543 21 7 20.1046 7 19C7 17.8954 7.89543 17 9 17C10.1046 17 11 17.8954 11 19Z" stroke="#a8a8a8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        <span class="counter">0</span>
+                    </span>
+                    <span class="icon">
+                        <svg fill="#a8a8a8" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="m13.58 11.6-1.33-2.18V6.33A4.36 4.36 0 0 0 10 2.26a2.45 2.45 0 0 0 0-.38A1.94 1.94 0 0 0 8 0a1.94 1.94 0 0 0-2 1.88 1.64 1.64 0 0 0 0 .38 4.36 4.36 0 0 0-2.25 4.07v3.09L2.42 11.6a1.25 1.25 0 0 0 1.06 1.9h1.77A2.68 2.68 0 0 0 8 16a2.68 2.68 0 0 0 2.75-2.5h1.77a1.25 1.25 0 0 0 1.06-1.9zM7.25 1.88A.7.7 0 0 1 8 1.25a.7.7 0 0 1 .75.63 6 6 0 0 0-.75 0 5.9 5.9 0 0 0-.75 0zM8 14.75a1.44 1.44 0 0 1-1.5-1.25h3A1.44 1.44 0 0 1 8 14.75zm-4.52-2.5 1.34-2.17.18-.31V6.33a4 4 0 0 1 .6-2.12A2.68 2.68 0 0 1 8 3.12a2.68 2.68 0 0 1 2.4 1.09 4 4 0 0 1 .6 2.12v3.44l.18.31 1.34 2.17z"/></svg>
+                    </span>
+                    <img src="images/herydj.jpg" alt="">
+                </div>
+            </header>
+    
+            <main>
+                <div class="container">
+                    <div class="filter-container">
+                        <div class="filters">
+                            <h2>Filter</h2>
+                            <div class="filter">
+                                <h3>Products Types</h3>
+                                <div class="types">
+                                    <div class="checkbox"></div>
+                                    <div class="type">Paid Samples</div>
+                                </div>
+                                <div class="types">
+                                    <div class="checkbox"></div>
+                                    <div class="type">Paid Samples</div>
+                                </div>
+                            </div>
+                            <div class="filter">
+                                <h3>Products Types</h3>
+                                <div class="types">
+                                    <div class="checkbox">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="#fb6a00" viewBox="0 0 24 24"><path d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                                    </div>
+                                    <div class="type">Paid Samples</div>
+                                </div>
+                                <div class="types">
+                                    <div class="checkbox"></div>
+                                    <div class="type">Paid Samples</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="icon-filter">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M3 7C3 6.44772 3.44772 6 4 6H20C20.5523 6 21 6.44772 21 7C21 7.55228 20.5523 8 20 8H4C3.44772 8 3 7.55228 3 7ZM6 12C6 11.4477 6.44772 11 7 11H17C17.5523 11 18 11.4477 18 12C18 12.5523 17.5523 13 17 13H7C6.44772 13 6 12.5523 6 12ZM9 17C9 16.4477 9.44772 16 10 16H14C14.5523 16 15 16.4477 15 17C15 17.5523 14.5523 18 14 18H10C9.44772 18 9 17.5523 9 17Z" fill="#000000"/></svg>
+                        </div>
+                    </div>
+                    <div class="products-container">
+                        <div class="products">
+                            
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+
+    </div>
+
+    <script src="src/js/functions.js"></script>
+    <script src="src/js/Cart.js"></script>
+    <script src="src/js/CartContainer.js"></script>
+    <script src="src/js/Product.js"></script>
+    <script src="src/js/Products.js"></script>
+    <script src="src/js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,145 @@
+header {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border-bottom: 1px solid rgb(239, 239, 239);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 44px;
+    height: 44px;
+}
+
+.logo h1 {
+    font-size: 18px;
+    transform: translateX(8px);
+}
+
+.form-search {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    border: 1px solid rgb(212, 212, 212);
+    border-radius: 22px;
+    padding: 2px;
+}
+
+.input-search {
+    padding: 0 12px;
+    border: none;
+    width: 100%;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 22px;
+    background-color: var(--color-primary);
+    color: white;
+    padding: 6px 8px;
+    width: 104px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.search:hover {
+    background-color: #ec7520;
+}
+
+.search .icon {
+    display: inline-block;
+    margin-right: 4px;
+    width: 20px;
+    height: 20px;
+}
+
+.items {
+    display: flex;
+    align-items: center;
+}
+
+.items img {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    margin-left: 4px;
+}
+
+.items .icon {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    margin: 0 8px;
+    cursor: pointer;
+}
+
+.items .icon-cart:hover path {
+    stroke: var(--color-primary);
+}
+
+.items .icon .counter {
+    position: absolute;
+    top: -9px;
+    right: -8px;
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+    border-radius: 50%;
+    color: white;
+    background-color: var(--color-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+    .logo img {
+        width: 36px;
+        height: 36px;
+    }
+    .logo h1 {
+        font-size: 16px;
+    }
+
+    .form-search {
+        width: auto;
+    }
+    .input-search {
+        display: none;
+    }
+    .search {
+        width: 88px;
+    }
+
+    .items .icon .counter {
+        width: 18px;
+        height: 18px;
+        font-size: 10px;
+    }
+
+    .items .icon {
+        margin: 0 4px;
+        width: 20px;
+        height: 20px;
+    }
+
+    .items img {
+        width: 28px;
+        height: 28px;
+    }
+}
+
+@media screen and (max-width: 576px)  {
+    .search {
+        width: 76px;
+    }
+}
